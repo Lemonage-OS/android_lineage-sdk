@@ -1799,16 +1799,6 @@ public final class LineageSettings {
                 new InclusiveIntegerRangeValidator(0, 2);
 
         /**
-         * Whether to show the brightness slider in quick settings panel.
-         * 0 = Never, 1 = show when expanded, 2 = show always
-         */
-        public static final String QS_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
-
-        /** @hide */
-        public static final Validator QS_SHOW_BRIGHTNESS_SLIDER_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 2);
-
-        /**
          * Whether to control brightness from status bar
          * 0 = 0ff, 1 = on
          */
@@ -2247,7 +2237,6 @@ public final class LineageSettings {
                 LineageSettings.System.LOCKSCREEN_PIN_SCRAMBLE_LAYOUT,
                 LineageSettings.System.SHOW_ALARM_ICON,
                 LineageSettings.System.STATUS_BAR_IME_SWITCHER,
-                LineageSettings.System.QS_SHOW_BRIGHTNESS_SLIDER,
                 LineageSettings.System.STATUS_BAR_BRIGHTNESS_CONTROL,
                 LineageSettings.System.VOLBTN_MUSIC_CONTROLS,
                 LineageSettings.System.USE_EDGE_SERVICE_FOR_GESTURES,
@@ -2401,7 +2390,6 @@ public final class LineageSettings {
             VALIDATORS.put(STATUS_BAR_IME_SWITCHER, STATUS_BAR_IME_SWITCHER_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_QUICK_QS_PULLDOWN,
                     STATUS_BAR_QUICK_QS_PULLDOWN_VALIDATOR);
-            VALIDATORS.put(QS_SHOW_BRIGHTNESS_SLIDER, QS_SHOW_BRIGHTNESS_SLIDER_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_BRIGHTNESS_CONTROL,
                     STATUS_BAR_BRIGHTNESS_CONTROL_VALIDATOR);
             VALIDATORS.put(VOLBTN_MUSIC_CONTROLS, VOLBTN_MUSIC_CONTROLS_VALIDATOR);
@@ -2909,12 +2897,6 @@ public final class LineageSettings {
         public static final String POWER_MENU_ACTIONS = "power_menu_actions";
 
         /**
-         * Whether to show the brightness slider in quick settings panel.
-         * @hide
-         */
-        public static final String QS_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
-
-        /**
          * Whether to show the auto brightness icon in quick settings panel.
          * @hide
          */
@@ -3291,7 +3273,6 @@ public final class LineageSettings {
                 LineageSettings.Secure.KEYBOARD_BRIGHTNESS,
                 LineageSettings.Secure.POWER_MENU_ACTIONS,
                 LineageSettings.Secure.STATS_COLLECTION,
-                LineageSettings.Secure.QS_SHOW_BRIGHTNESS_SLIDER,
                 LineageSettings.Secure.NAVIGATION_RING_TARGETS[0],
                 LineageSettings.Secure.NAVIGATION_RING_TARGETS[1],
                 LineageSettings.Secure.NAVIGATION_RING_TARGETS[2],
